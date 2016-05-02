@@ -1,12 +1,12 @@
 <!-- Your banner code -->
-<div class="banner text-center" style="background: linear-gradient(135deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path(background.jpg %>');">
+<div class="banner text-center" style="background: linear-gradient(135deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('background.jpg') %>);">
   <div class="banner-content">
     <h1>WELCOME HOME</h1>
     <p>Rent unique places to stay from local hosts in 190+ countries.</p>
     <form action="#" class="form-inline">
       <input type="text" class="form-control input-lg" placeholder="checkin">
       <input type="text" class="form-control input-lg" placeholder="checkout">
-      <select name="" id="" class="form-control input-lg">
+      <select class="form-control input-lg">
         <option value="1">1 person</option>
         <option value="2">2 persons</option>
         <option value="3">3 persons</option>
@@ -20,28 +20,29 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-3">
       <div class="feature">
-        <img src="images/globe.png" alt="">
+        <%= image_tag 'globe.png' %>
         <h2>Discover the world</h2>
         <p>The earth is your new home.</p>
       </div>
     </div>
+
     <div class="col-xs-12 col-sm-6 col-md-3">
       <div class="feature">
-        <img src="images/dollar.png" alt="">
+        <%= image_tag 'dollar.png' %>
         <h2>Pay online</h2>
         <p>No cash issues anymore.</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3">
       <div class="feature">
-        <img src="images/beer.png" alt="">
+        <%= image_tag 'beer.png' %>
         <h2>Meet people</h2>
         <p>Discover new culture and lifestyle.</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-3">
       <div class="feature">
-        <img src="images/heart.png" alt="">
+        <%= image_tag 'heart.png' %>
         <h2>Share and love</h2>
         <p>Join a community you will love.</p>
       </div>
@@ -49,6 +50,47 @@
   </div>
 </div>
 
+<!-- Your cards code -->
+<div class="wrapper-grey padded">
+  <div class="container">
+    <h2 class="text-center">Your next trip</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(135deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('card-paris.jpg') %>);">
+          <div class="card-category">Paris</div>
+          <div class="card-description">
+            <h2>Seb's home</h2>
+            <p>Charming room with patio</p>
+          </div>
+          <img src="images/seb.jpg" alt="" class="card-user avatar avatar-large">
+          <a href="#" class="card-link"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+          <div class="card-category">Brussels</div>
+          <div class="card-description">
+            <h2>Anne's home</h2>
+            <p>lovely house</p>
+          </div>
+          <img src="images/anne.jpg" alt="" class="card-user avatar avatar-large">
+          <a href="#" class="card-link"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+          <div class="card-category">London</div>
+          <div class="card-description">
+            <h2>Romain's home</h2>
+            <p>Nice flat in Piccadilly</p>
+          </div>
+          <img src="images/romain.jpeg" alt="" class="card-user avatar avatar-large">
+          <a href="#" class="card-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Your newsletter code -->
 <div class="newsletter text-center padded">
