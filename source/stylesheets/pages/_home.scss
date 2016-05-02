@@ -31,7 +31,7 @@
   }
   h2 {
     font: {
-      family: 'Raleway';
+      family: $header-font;
       weight: bold;
       size: 20px;
     }
@@ -40,7 +40,7 @@
   }
   p {
     font: {
-      family: 'Open Sans';
+      family: $base-font;
       weight: lighter;
       size: 15px;
     }

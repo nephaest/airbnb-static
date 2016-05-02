@@ -6,10 +6,10 @@
 
 body {
   margin: 0;
-  font-family: Open-sans, sans-serif;
+  font-family: $base-font, sans-serif;
 }
 h1, h2, h3 {
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: $header-font, Helvetica, sans-serif;
 }
 h2 {
   font: {
@@ -23,7 +23,7 @@ h2 {
 }
 
 .wrapper-grey {
-  background: #F4F4F4;
+  background: $gray-lighter;
 }
 
 // Paddings
